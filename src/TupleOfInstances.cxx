@@ -120,12 +120,7 @@ PyTypeObject InstanceArrayIter_Type = {
 #if PY_VERSION_HEX >= 0x03080000
     , 0                           // tp_vectorcall
 #endif
-#if PY_VERSION_HEX >= 0x030c0000
-    , 0                           // tp_watched
-#endif
-#if PY_VERSION_HEX >= 0x030d0000
-    , 0                           // tp_versions_used
-#endif
+    CPYCPPYY_PYTYPE_TAIL
 };
 
 
@@ -260,12 +255,7 @@ PyTypeObject TupleOfInstances_Type = {
 #if PY_VERSION_HEX >= 0x03080000
     , 0                           // tp_vectorcall
 #endif
-#if PY_VERSION_HEX >= 0x030c0000
-    , 0                           // tp_watched
-#endif
-#if PY_VERSION_HEX >= 0x030d0000
-    , 0                           // tp_versions_used
-#endif
+    CPYCPPYY_PYTYPE_TAIL
 };
 
 } // namespace CPyCppyy
